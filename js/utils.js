@@ -1,12 +1,19 @@
 export function readTextFile(file)
 {   
     let text = "";
-    fetch(file).then((response) => {
-      text=response;
-    })
-    .catch((err)=>{
-      console.log(err);
-    });
+    let rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+              text = rawFile.responseText;
+            }
+        }
+    }
+    rawFile.send(null);
 
     return text;
 }
@@ -17,5 +24,5 @@ export function parseCSV(csvString){
 }
 
 export function popHeaders(csvArray){
-  return csvArray.shift().split(',')
+  return csvArray.shift().split(',');
 }
