@@ -1,3 +1,3 @@
 import {readTextFile} from './fileReader.js';
 
-console.log(readTextFile("../dataFiles/heart.csv"));
+console.log(readTextFile("https://b2gdevs.github.io/MLIntro/dataFiles/heart.csv"));
