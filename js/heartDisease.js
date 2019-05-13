@@ -29,8 +29,9 @@ document.addEventListener("DOMContentLoaded", () =>{
   let headers = popHeaders(csvArray);
   let dataContainer = document.getElementById("data-container");
 
-  csvArray.forEach((row) => {
-    dataContainer.appendChild(createPatientDescription(row));
-  });
+// csvArray.forEach((row) => {
+//   dataContainer.appendChild(createPatientDescription(row));
+// });
 
+  dataContainer.appendChild(document.createElement("div"));
 });
