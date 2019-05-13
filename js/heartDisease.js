@@ -33,5 +33,5 @@ document.addEventListener("DOMContentLoaded", () =>{
 //   dataContainer.appendChild(createPatientDescription(row));
 // });
 
-  dataContainer.appendChild(document.createElement("div"));
+  // dataContainer.appendChild(document.createElement("div"));
 });
