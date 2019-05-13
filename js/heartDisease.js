@@ -26,6 +26,6 @@ let csvArray = parseCSV(csvText);
 let headers = popHeaders(csvArray);
 let dataContainer = document.getElementById("data-container");
 
-// csvArray.forEach((row) => {
-//   dataContainer.appendChild(createPatientDescription(row));
-// });
+for(let row of csvArray){
+  document.appendChild(createPatientDescription(row));
+}
