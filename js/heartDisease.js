@@ -21,16 +21,16 @@ function createPatientDescription(patientRow){
 
 // ############# Main ###########
 
-let csvText = readTextFile("https://b2gdevs.github.io/MLIntro/dataFiles/heart.csv");
-let csvArray = parseCSV(csvText);
-let headers = popHeaders(csvArray);
+
 
 document.addEventListener("DOMContentLoaded", () =>{
+  let csvText = readTextFile("https://b2gdevs.github.io/MLIntro/dataFiles/heart.csv");
+  let csvArray = parseCSV(csvText);
+  let headers = popHeaders(csvArray);
   let dataContainer = document.getElementById("data-container");
 
-// csvArray.forEach((row) => {
-//   dataContainer.appendChild(createPatientDescription(row));
-// });
+  csvArray.forEach((row) => {
+    dataContainer.appendChild(createPatientDescription(row));
+  });
 
-  dataContainer.appendChild(document.createChild("div"));
 });
