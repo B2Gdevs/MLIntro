@@ -6,7 +6,7 @@ function createPatientDescription(patientRow){
     element.className = "row";
     element.innerHTML =   `<div class="col-lg-12">` +
     `<p class="patient-info patient-description">` +
-      `Patient is a <span class="patient-age font-weight-bold">${arr[0]}</span> and there sex is <span class="patient-sex font-weight-bold">${arr[1]}</span>.
+      `Patients age is <span class="patient-age font-weight-bold">${arr[0]}</span> and there sex is <span class="patient-sex font-weight-bold">${arr[1]}</span>.
       Their chest pain is <span class="patient-cp font-weight-bold">${arr[2]}</span>, thier resting blood pressure is <span class="patient-trestbps font-weight-bold">${arr[3]}</span>.
       Cholestoral is sitting at <span class="patient-chol font-weight-bold">${arr[4]}</span>, and blood sugar above 120 mg/dl is <span class="patient-fbs font-weight-bold">${arr[5]}</span>.
       Resting electrocardiographic results was <span class="patient-restecg" font-weight-bold">${6}</span>
