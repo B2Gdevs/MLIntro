@@ -4,6 +4,9 @@ Hi everyone this repo is for the website that has been made to help people pract
 Too many tutorials give you a dataset that has been properly cleaned and organized.  This is just not practical enough.  How does one get that data in the first place?
 This website will be more challenging then that where it will eventually progress in to the more challenging aspects of data collection, analysis, and then machine learning.
 
+### Website
+The website is found [here](https://b2gdevs.github.io/MLIntro/)
+
 #### Challenges
 
 ##### Easy
